@@ -21,7 +21,8 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
-          npx playwright install --with-deps
+          npx playwright install
+          npx playwright install-deps
 
       - name: Run Scraper - 24f2008196@ds.study.iitm.ac.in
         run: node scrape.js
